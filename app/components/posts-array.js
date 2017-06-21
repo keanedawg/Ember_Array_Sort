@@ -1,4 +1,8 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({
+var postsarray = Ember.Component.extend({
+
+    
 });
+
+export default postsarray;
