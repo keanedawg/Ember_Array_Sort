@@ -1,5 +1,8 @@
 {{outlet}}
 
+{{#each model as |post|}}
 {{#posts-array}}
-
+    <h2>{{post.title}}</h2>
+    <h3>by {{post.author}}</h3>
 {{/posts-array}}
+{{/each}}
