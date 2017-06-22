@@ -12,7 +12,7 @@ export default Ember.Route.extend({
             title: "Diddly Doo",
             author: "No I'm Adrian"
         },{
-            title: "Ayy Lmao",
+            title: "Yisss",
             author: "Dank Sir"
         }];
 

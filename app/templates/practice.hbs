@@ -1,5 +1,8 @@
 {{outlet}}
 
+
+<button {{action "sortTitles"}}>Sort by Title</button>
+<button {{action "sortAuthors"}}>Sort by Author</button>
 {{#each model as |post|}}
 {{#posts-array model}}
     <h2>{{post.title}}</h2>
