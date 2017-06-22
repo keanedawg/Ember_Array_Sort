@@ -3,8 +3,10 @@
 
 <button {{action (action 'sortBy' 'title')}}>Sort by Title</button>
 <button {{action (action 'sortBy' 'author')}}>Sort by Author</button>
+<button {{action (action 'sortBy' 'date')}}>Sort by Date</button>
 
 {{#each sortedRows as |row|}}
     <h2>Title: {{row.title}}</h2>
     <h3>Author: {{row.author}}</h3>
+    <h5>Date: {{row.date}}</h5>
 {{/each}}
