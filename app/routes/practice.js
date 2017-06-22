@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     model() {
-        console.log("hello " + Date.now());
         return [{
             title: "Learning EmberJS",
             author: "Erik Hatchett",
