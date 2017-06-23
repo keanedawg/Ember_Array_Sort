@@ -1,9 +1,9 @@
 {{outlet}}
 
 
-<button {{action (action 'sortBy' 'title')}}>Sort by Title</button>
-<button {{action (action 'sortBy' 'author')}}>Sort by Author</button>
-<button {{action (action 'sortBy' 'date')}}>Sort by Date</button>
+<button {{action (action 'sortBy' 'title' 'asc')}}>Sort by Title</button>
+<button {{action (action 'sortBy' 'author' 'asc')}}>Sort by Author</button>
+<button {{action (action 'sortBy' 'date' 'desc')}}>Sort by Date</button>
 
 {{#each sortedRows as |row|}}
     <h2>Title: {{row.title}}</h2>

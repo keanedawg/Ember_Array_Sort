@@ -12,12 +12,12 @@ export default Ember.Controller.extend({
 
     sortedRows: Ember.computed.sort('model', 'sortKeyOrder'),
 
-//    sortKeyOrder: this.sortKey + ":" + this.sortOrder,
-
-    sortKeyOrder: ["date" + ":" + "dest"],
+    sortKeyOrder: ["date:desc"],
     actions: {
-        sortBy(sortKey) {
+        sortBy(sortKey, sortOrder) {
             this.set('sortKey', sortKey);
+            this.set('sortOrder', sortOrder);
+            this.set('sortKeyOrder', [sortKey + ":" + sortOrder])
         }
     }
 });
